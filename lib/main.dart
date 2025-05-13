@@ -32,8 +32,14 @@ class MyApp extends StatelessWidget {
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
-                title: Text(contatos[index].nomeCompleto),
-                subtitle: Text(contatos[index].email),
+                title: Text(
+                  contatos[index].nomeCompleto,
+                  style: TextStyle(fontWeight: FontWeight.bold),
+                ),
+                subtitle: Text(
+                  contatos[index].email,
+                  style: TextStyle(color: Colors.grey[600]),
+                ),
               );
             },
           )),
